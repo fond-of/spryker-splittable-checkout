@@ -41,7 +41,23 @@ class SplittableCheckoutWorkflow implements SplittableCheckoutWorkflowInterface
 
         $splittableCheckoutResponseTransfer = (new SplittableCheckoutResponseTransfer())->toArray($checkoutResponseTransfer->fromArray());
 
-        return $checkoutResponseTransfer;
+        return $splittableCheckoutResponseTransfer;
     }
+
+    /**
+     * @param \Generated\Shared\Transfer\CheckoutResponseTransfer $checkoutResponseTransfer
+     *
+     * @return \Generated\Shared\Transfer\SplittableCheckoutResponseTransfer
+     */
+    protected function mapCheckoutResponseTransferToSplittableCheckoutResponseTransfer(
+        CheckoutResponseTransfer $checkoutResponseTransfer
+    ): SplittableCheckoutResponseTransfer {
+        return (new SplittableCheckoutResponseTransfer())
+            ->setErrors($checkoutResponseTransfer->getErrors())
+            ->setIsSuccess($checkoutResponseTransfer->getIsSuccess())
+
+
+    }
+
 
 }
