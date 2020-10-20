@@ -20,6 +20,7 @@ class SplittableCheckoutDependencyProvider extends AbstractBundleDependencyProvi
      */
     public function provideBusinessLayerDependencies(Container $container)
     {
+        exit('2');
         $container = $this->addCheckoutFacade($container);
 
         return $container;

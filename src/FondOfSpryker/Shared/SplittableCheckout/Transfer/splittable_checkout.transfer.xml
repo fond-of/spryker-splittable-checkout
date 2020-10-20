@@ -8,4 +8,10 @@
         <property name="shippingAddress" type="Address" />
     </transfer>
 
+    <transfer name="SplittableCheckoutResponse">
+        <property name="isSuccess" type="bool" />
+        <property name="errors" type="SplittableCheckoutError[]" singular="error" />
+        <property name="saveOrder" type="SaveOrder"/>
+    </transfer>
+
 </transfers>

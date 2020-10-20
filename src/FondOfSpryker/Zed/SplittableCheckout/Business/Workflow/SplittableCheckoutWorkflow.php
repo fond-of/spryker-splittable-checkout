@@ -54,9 +54,7 @@ class SplittableCheckoutWorkflow implements SplittableCheckoutWorkflowInterface
     ): SplittableCheckoutResponseTransfer {
         return (new SplittableCheckoutResponseTransfer())
             ->setErrors($checkoutResponseTransfer->getErrors())
-            ->setIsSuccess($checkoutResponseTransfer->getIsSuccess())
-
-
+            ->setIsSuccess($checkoutResponseTransfer->getIsSuccess());
     }
 
 
