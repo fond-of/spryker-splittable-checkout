@@ -11,7 +11,12 @@
     <transfer name="SplittableCheckoutResponse">
         <property name="isSuccess" type="bool" />
         <property name="errors" type="SplittableCheckoutError[]" singular="error" />
-        <property name="saveOrder" type="SaveOrder"/>
+        <property name="orderReferences" type="array" singular="orderReference" />
+    </transfer>
+
+    <transfer name="SplittableCheckoutError">
+        <property name="errorCode" type="int" />
+        <property name="message" type="string" />
     </transfer>
 
 </transfers>
