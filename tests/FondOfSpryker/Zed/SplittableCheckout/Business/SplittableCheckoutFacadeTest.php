@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSpryker\Zed\SplittableCheckoutFacade\Business;
+namespace FondOfSpryker\Zed\SplittableCheckout\Business;
 
 use Codeception\Test\Unit;
 use FondOfSpryker\Zed\SplittableCheckout\Business\SplittableCheckoutBusinessFactory;

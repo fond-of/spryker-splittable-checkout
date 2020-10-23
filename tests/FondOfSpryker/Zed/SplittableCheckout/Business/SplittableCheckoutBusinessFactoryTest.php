@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSpryker\Zed\SplittableCheckout;
+namespace FondOfSpryker\Zed\SplittableCheckout\Business;
 
 use Codeception\Test\Unit;
 use FondOfSpryker\Zed\ProductListCompany\ProductListCompanyDependencyProvider;
@@ -9,6 +9,8 @@ use FondOfSpryker\Zed\SplittableCheckout\Business\Workflow\SplittableCheckoutWor
 use FondOfSpryker\Zed\SplittableCheckout\Dependency\Facade\SplittableCheckoutToCheckoutFacadeInterface;
 use FondOfSpryker\Zed\SplittableCheckout\Dependency\Facade\SplittableCheckoutToPersistentCartFacadeInterface;
 use FondOfSpryker\Zed\SplittableCheckout\Dependency\Facade\SplittableCheckoutToQuoteFacadeInterface;
+use FondOfSpryker\Zed\SplittableCheckout\SplittableCheckoutConfig;
+use FondOfSpryker\Zed\SplittableCheckout\SplittableCheckoutDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 
 class SplittableCheckoutBusinessFactoryTest extends Unit
